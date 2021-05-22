@@ -20,6 +20,7 @@ npm i json-server
 ```
 npm start
 ```
+
 ## ETAPA 02
 - Instalando o CLI do Angular
 ```
@@ -32,4 +33,23 @@ ng new nome_do_projeto --minimal
 - Start da aplicação: No diretório nome_da_aplicação rodar o comando:
 ```
 npm start
+```
+
+## ETAPA 03
+- Modificar o arquivo angular.json | O arquivo de css, html, e TS serão arquivos separados e não inline como o padrão que seria todos eles em um arquivo único. 
+```
+"@schematics/angular:component": {
+          "inlineTemplate": false,
+          "inlineStyle": false,
+```
+- Separar o html que esta no arquivo .ts criando o arquivo "app.component.html"
+```
+@Component({
+  selector: 'app-root',
+  templateUrl: 'app.component.html'
+})
+```
+- Instalar os componentes do Material Design. No terminal digite:
+```
+ng add @angular/material
 ```

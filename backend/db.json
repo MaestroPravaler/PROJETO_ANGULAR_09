@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Violão",
+      "price": 1250.99
+    },
+    {
+      "id": 2,
+      "name": "Viola",
+      "price": 1250.99
+    },
+    {
+      "id": 3,
+      "name": "Cello",
+      "price": 1250.99
+    },
+    {
+      "name": "Flauta Tranversal",
+      "price": "5346.90",
+      "id": 4
+    }
+  ]
+}

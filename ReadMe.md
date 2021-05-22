@@ -1,6 +1,6 @@
 # Angular 09 (Funcionalidades)
 
-## Commit 01
+## ETAPA 01
 - criação do arquivo package.json (Pasta backend) pelo terminal digite:
 ```
 npm init -y
@@ -16,7 +16,20 @@ npm i json-server
     "start": "json-server --watch db.json --port 3001"
   },
 ```
-- Start no serviço (Diretório backend)
+- Start no serviço: No diretório backend rodar o comando.
+```
+npm start
+```
+## ETAPA 02
+- Instalando o CLI do Angular
+```
+sudo npm i -g @angular/cli
+```
+- Criando um novo projeto (-- minimal instala os componentes básicos)
+```
+ng new nome_do_projeto --minimal
+```
+- Start da aplicação: No diretório nome_da_aplicação rodar o comando:
 ```
 npm start
 ```

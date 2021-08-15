@@ -1,6 +1,6 @@
 # Angular 09 (Funcionalidades)
 
-## ETAPA 01
+## ETAPA 01 (Construindo o Backend)
 1 - Criação do arquivo package.json (Pasta backend) pelo terminal digite:
 ```
 npm init -y
@@ -20,7 +20,7 @@ npm i json-server
 ```
 npm start
 ```
-
+### 1.1 - Testando o Back com o Postman
 ## ETAPA 02
 1 - Instalando o CLI do Angular
 ```
@@ -36,7 +36,7 @@ npm start
 ```
 
 ## ETAPA 03
-1 - Modificar o arquivo angular.json | O arquivo de css, html, e TS serão arquivos separados e não inline como o padrão que seria todos eles em um arquivo único. 
+1 - Modificar o arquivo angular.json | O arquivo de css, html, e TS serão arquivos separados e não inline como o padrão que seria todos eles em um arquivo único.
 ```
 "@schematics/angular:component": {
           "inlineTemplate": false,
@@ -72,4 +72,4 @@ ng g c components/template/footer
 ng g c components/template/nav
 ```
 
-5 - Menu lateral com icones 
+5 - Menu lateral com icones

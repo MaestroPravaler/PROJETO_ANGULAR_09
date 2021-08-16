@@ -60,7 +60,17 @@ ng add @angular/material
 ng g c components/template/header
 ```
 
-2 - Gerar o componente Footer. No terminal digite:
+2 - Importar os módulos do material design que utilizaremos na aplicação. Arquivo (app,module.ts)
+```
+import { MatToolbarModule } from '@angular/material/toolbar';
+
+imports: [
+  ...
+  MatToolbarModule
+]
+```
+
+3 - Gerar o componente Footer. No terminal digite:
 ```
 ng g c components/template/footer
 ```
@@ -72,4 +82,14 @@ ng g c components/template/footer
 ng g c components/template/nav
 ```
 
-5 - Menu lateral com icones
+5 - Importar os componentes sidebar e list do material design
+```
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+
+imports: [
+  ...
+  MatSidenavModule,
+  MatListModule
+]
+```

@@ -242,3 +242,25 @@ HTML <=> TS
 03 - Singletons - Apenas uma instância - Os services são singletons do escopo de um injector.
 
 04 - Injector - possuimos 2 tipos o injector de módulo (ModuleInjector - @NgModule | @Injectable) ou in injector de elemento (ElementInjector - @Directive | @Component).
+
+## Etapa 08
+
+01 - Criando a View Home
+
+```
+// No terminal digite
+ng g c views/home
+```
+
+02 - Importando o componente card do angular
+
+```
+// No arquivo app.module.ts
+import { MatCardModule } from "@angular/material/card";
+imports: [
+        ...,
+        MatCardModule,
+    ],
+```
+
+03 - Utilizando o componente mat-card no módulo views/home

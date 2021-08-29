@@ -226,13 +226,19 @@ HTML <=> TS
 ## Etapa 06
 
 01 - Programação Reativa (ReativeX)
+
 02 - Callback
-05 - Promises - Consegue encadear vãrias chamadas - Consegue utilizar somente uma vez
+
+03 - Promises - Consegue encadear vãrias chamadas - Consegue utilizar somente uma vez
+
 04 - Observables (reusável - stream de dados - operadores) O padrão observer é a base da programação reativa.
 
 ## Etapa 07
 
 01 - Service - São Classes que tem como principal objetivo organizar e compartilhar métodos e dados entre os componentes. Posso utilizar services dentro de diretivas. Tudo que diz respeito ao "visual" da aplicação são componentes; regras que não diz respeito a parte visual (encapsular a api - backend da aplicação)
+
 02 - Injeção de dependência - É um padrão no qual a clase recebe as dependências de uma fonte externa ao invés de criar por conta própria.
+
 03 - Singletons - Apenas uma instância - Os services são singletons do escopo de um injector.
+
 04 - Injector - possuimos 2 tipos o injector de módulo (ModuleInjector - @NgModule | @Injectable) ou in injector de elemento (ElementInjector - @Directive | @Component).

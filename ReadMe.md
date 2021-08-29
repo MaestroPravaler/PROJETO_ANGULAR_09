@@ -245,7 +245,7 @@ HTML <=> TS
 
 ## Etapa 08
 
-01 - Criando a View Home
+01 - Criando o componente view/home
 
 ```
 // No terminal digite
@@ -264,3 +264,47 @@ imports: [
 ```
 
 03 - Utilizando o componente mat-card no módulo views/home
+
+04 - Criando o componente view/product-crud
+
+```
+// No terminal digite
+ng g c views/product-crud
+```
+
+05 - Alternando entre os dois componentes criados (view/home | view/product-crud)
+
+```
+// No arquivo app-routing.module.ts
+import { HomeComponent } from "./views/home/home.component";
+import { ProductCrudComponent } from "./views/product-crud/product-crud.component";
+
+const routes: Routes = [
+    {
+        path: "",
+        component: HomeComponent,
+    },
+    {
+        path: "products",
+        component: ProductCrudComponent,
+    },
+];
+
+// No arquivo nav.component.html
+<a mat-list-item routerLink="/"> // no caso do home
+<a mat-list-item routerLink="/products"> // no caso de produtos
+
+// Onde na minha navegação os componentes serão substituidos.
+<mat-sidenav-content class="content">
+  <router-outlet></router-outlet>
+</mat-sidenav-content>
+```
+
+06 - Ao clicar na logo devemos navegar para a página inicial
+
+```
+// No arquvivo header.component.html
+<a routerLink="/"> // no logo
+```
+
+## Etapa 09
